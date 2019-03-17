@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import NProgress from 'nprogress'
 
 export default {
   name: 'Upload',
@@ -49,12 +50,16 @@ export default {
       var vm = this;
       const file = ev.target.files[0];
       const reader = new FileReader();
+      NProgress.start();
 
       reader.readAsText(file);      
       reader.onload = function(e) {
         const csv = e.target.result;
         const parsed_csv = vm.parseCSV(csv);
       };
+      reader.onloadend = function(ev) {
+        NProgress.done();
+      }
     },
   }
 }
