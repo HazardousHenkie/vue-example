@@ -8,10 +8,11 @@ This application makes it possible to upload a CSV file (example file: https://g
 ```
 yarn install
 
+```
+
 If you like, this project uses VueCLI. The explanation for VueCLI can be found here https://cli.vuejs.org/guide/
 もし使いたいようでしたら、このプロジェクトはVueCLI使っています。説明は　https://cli.vuejs.org/guide/
 
-```
 
 ### Compiles and hot-reloads for development
 ```
