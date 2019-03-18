@@ -14,7 +14,6 @@
         </thead>
         <tbody>
           <tr v-for="(item, index) in filteredList">
-            {{item.body}}
             <td>{{ item.prefecture }}</td>
             <td>{{ item.address }}</td>
             <td>{{ item.comment }}</td>
